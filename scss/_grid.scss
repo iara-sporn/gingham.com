@@ -1,0 +1,9 @@
+/* grid */
+.grid{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "navBar navBar navBar" 
+                         "header header header" 
+                         "title_Footer title_Footer title_Footer";
+}

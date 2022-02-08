@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.google.com/specimen/Monoton#standard-styles' rel='stylesheet' type='text/css'/>
+
+    <title>Contacto</title>
+</head>
+    <body>
+      
+      <header>
+        <div class="wrapperHeader">
+          <a class="navBarBrand" href="index.html"><img class="navBar_logo" src="assets/img/logo.png" alt="..." /></a>
+          <nav class="navBar">
+            <ul class="navContainer">
+              <li class="nav-item px-2"><a class="navLink fw-bold" href="portfolio.html">Portfolio</a>
+                <ul class="subMenu">
+                  <li><a href="portfolio/branding.html"> Branding</a></li>
+                  <li><a href="portfolio/fotos.html"> Fotos</a></li>
+                  <li><a href="portfolio/fonts.html"> Fonts</a></li>
+                </ul>
+              </li>
+              <li class="nav-item px-2"><a class="navLink fw-bold" href="sobremi.html">Sobre mi</a></li>
+              <li class="nav-item px-2"><a class="navLink fw-bold" href="contacto.html">Contacto</a></li>
+              <li class="nav-item px-2"><a class="navLink fw-bold" href="faq.html">FAQ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+        <main>
+          <section>
+            <div class="sufeeLogin">
+                <div class="container">
+                    <div class="loginContent">
+                        <div class="loginForm">
+                            <form  id="formulario" action="" method="get" enctype="text/plain" >
+                                <div class="formGroup">
+                                <label> Ingrese su nombre </label>
+                                <input type="text" class="formControl" placeholder="Ingrese su nombre" id="nombre" >
+                                </div>
+                                <br>
+                                <div class="formGroup">
+                                <label> Ingrese su apellido </label>
+                                <input type="text" class="formControl" placeholder="Ingrese su apellido" id="apellido">
+                                </div>
+                                <br>
+                                <div class="formGroup">
+                                <label> Seleccione que trabajos te gustaron</label>
+                                <div class="rowSelect">
+                                        <div class="opciones">
+                                            <select name="select" id="select" class="formControl">
+                                                <option value="" disabled selected>Selecicone una opción</option>
+                                                <option value="0">Trabajo 1</option>
+                                                <option value="1">Trabajo 2</option>
+                                                <option value="2">Trabajo 3</option>
+                                                <option value="3">Trabajo 4</option>
+                                            </select>
+                                     </div>
+                                </div>
+                                <br>
+                                <div class="formGroup">
+                                  <label for="newsletter">Desea suscribirse a mi newsletter</label>
+                                  <input type="checkbox" name="checkbox" id="newsletter" value="1">
+                                </div>
+                                <br>
+                                <div class="formGroup">
+                                  <label for="comentario">Deje su consulta</label>
+                                  <br>
+                                  <textarea name="txtMsg" id="comentario" cols="60" rows="10"></textarea>
+                                </div>
+                                <div class="rowButton">
+                                      <input type="submit" value="Enviar" class="btnEnviar"></input>
+                                      <input type="reset" value="Borrar formulario" class="btnBorrar"></input>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div> 
+            </div>	
+        </section>
+      </main> 
+      <br>
+
+      <footer class="title_Footer">
+        <div class="footer_Row">
+          <div class="footer_Section1">
+            <div class="footer_nombre">GINGHAM</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="footer_Section2">Portfolio
+            <p class="footer_listado">
+              <a href="portfolio/fotos.html">Fotos</a>
+            </p>
+            <p class="footer_listado">
+              <a href="portfolio/branding.html">Branding</a>
+            </p>
+            <p class="footer_listado">
+              <a href="portfolio/fonts.html">Fonts</a>
+            </p>
+          </div>
+          <div class="footer_Section3"> Contacto
+            <p><i class="footer_address"></i> Buenos Aires, Argentina</p>
+            <p>
+              <i class="footer_mail"></i>
+              sporniara@gmail.com
+            </p>
+            <p><i class="footer_phone"></i> + 1234567890</p>
+          </div>
+        </div>
+      </footer>
+    </body>
+</html>

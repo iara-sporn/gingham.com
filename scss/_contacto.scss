@@ -1,0 +1,26 @@
+@import "_vars";
+
+.sufeeLogin{
+    text-align: $centro;
+ }
+   
+ .rowButton{
+    text-align: $centro;
+ }
+   
+ .rowSelect{
+    text-align: $centro;
+ }
+
+$nombre:""; /* Mi constante */
+
+.text {
+      @if $nombre == iara {
+             color: blue;
+      } @else if $nombre == victoria {
+                 color: red;
+     } @else {
+                color: black;
+      }
+}
+

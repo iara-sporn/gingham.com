@@ -1,0 +1,38 @@
+@import "_media-query"; 
+.hero{
+    height: 70vh;
+    background-image: url("../assets/img/fondo.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    &__Contenedor{
+        @include tablet{
+            .column {
+                width: 100%;
+        }
+        
+    }
+
+}
+    &_Img{
+        transition: 3s;
+        width: 50%;
+    }
+    &__Text{
+        text-align: center;
+        @include tablet{
+            .column {
+                width: 100%;
+        }
+        
+    }
+        @include movil{
+            .a{
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}

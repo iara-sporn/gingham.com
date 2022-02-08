@@ -1,0 +1,77 @@
+@import "_vars"; 
+@import "_media-query";
+
+.header{ 
+    grid-area: header;
+    @include movil{
+        .a{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.navBar{
+    grid-area: navBar;
+
+    ul{
+        li{
+            display: inline;
+            text-align: justify;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            text-decoration: none;
+
+            a{
+                color: $bordo;
+                text-decoration: none;
+                display: inline;
+            }
+        }
+    }
+
+    &_logo{
+        width: 20%;
+        height: 20%;
+    }
+}
+
+.wrapperHeader {
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-between;
+    align-items: center;
+    background-image: $gradient;
+
+}
+
+li{
+    padding: 10px 15px;
+}
+
+.navContainer li{
+    display: inline-block;
+    left: 50%;
+    justify-content: space-between;
+    &:hover ul{
+        display: block;
+    }
+}
+  
+.subMenu{
+    display: none;
+    position: absolute;
+    background-color: $naranja;
+
+    li{
+        display: block;
+        position: relative;
+        top: 20%;
+    }
+}
+  
+
+
+
+
+

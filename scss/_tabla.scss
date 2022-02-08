@@ -1,0 +1,15 @@
+@import "_vars";
+  
+table {
+    border: 3px solid;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+
+    tr{
+        border: 1px solid;
+        th{
+            background-color: $blanco;
+            border: 1px solid;
+        }
+    }
+}
+    

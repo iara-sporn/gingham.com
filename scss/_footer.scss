@@ -1,0 +1,59 @@
+@import "_vars";
+@import "_media-query";
+@import "_grid";
+
+.title_Footer .footer_Row{
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: $background;
+    display: $grid;
+    @include movil{
+        .title_Footer .footer_Row{
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: "footer_Section1" "footer_Section2" "footer_Section3";
+          }
+    }
+        
+    &__listado{
+        font-size: 20px;
+        padding: 2%;
+        text-decoration: none;
+
+        a{
+            text-decoration: none;
+
+        }
+    }
+    
+    &__nombre{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    &__Section1{
+        text-align: center;
+        grid-area: footer_Section1;
+
+        p{
+            font-size: 15px;
+            color: $negro;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    }
+
+    &__Section2{
+        text-align: center;
+        grid-area: footer_Section2;
+    }
+
+    &__Section3{
+        text-align: center;
+        grid-area: footer_Section3;
+    }
+    
+}
+
+.footer_Section1, .footer_Section2 , .footer_Section3{
+    width: 100%;
+    height: 20%;
+} 

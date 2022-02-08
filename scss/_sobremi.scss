@@ -1,0 +1,42 @@
+@import "_vars";
+
+.sobremi {
+
+   h2{
+      color: $negro;
+      list-style: none;
+      display: inline;
+      text-align: justify;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 20px;
+   }
+    
+
+    &_fotoMia{
+      width: 200%; 
+      float: left; 
+    }
+
+    &_textoDesc{
+      width: 60%;
+      text-align: inherit;
+      float: right;
+    }
+
+    &_textoSecu{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 20px;
+      text-align: $centro;
+    }
+ }
+ 
+ .trabajos{
+    &_row{
+      display: flex;
+    }
+
+    &_column{
+      flex: 25%;
+      padding: 3px;
+    }
+ }

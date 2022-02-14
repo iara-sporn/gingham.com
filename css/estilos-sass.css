@@ -64,6 +64,10 @@
   background-image: linear-gradient(#d75321, #df693f);
 }
 
+.colorHeader {
+  background-image: linear-gradient(#d75321, #df693f);
+}
+
 li {
   padding: 10px 15px;
 }

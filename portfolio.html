@@ -1,103 +1,150 @@
 <!DOCTYPE html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.google.com/specimen/Monoton#standard-styles' rel='stylesheet' type='text/css'/>
+  <!-- SEO -->
+  <meta name="description"
+    content="Este es el sitio web de mi portfolio en el que encontrarás imágenes, videos y mucho más">
+  <meta name="keywords" content="FOTOS, VIDEOS, BRANDING, FONTS, PORTFOLIO, DISEÑO, EDITS">
 
-    <title>Lista de trabajos</title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&amp;display=swap" rel="stylesheet">
+
+  <!-- logos de fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- css -->
+  <link href="scss/estilos-sass.css" rel="stylesheet" />
+
+  <title>Lista de trabajos</title>
 </head>
+
 <body>
+
+  <!-- header -->
+
   <header>
-    <div class="wrapperHeader">
-      <a class="navBarBrand" href="index.html"><img class="navBar_logo" src="assets/img/logo.png" alt="logo gingham" /></a>
-      <nav class="navBar">
-        <ul class="navContainer">
-          <li class="nav-item px-2"><a class="navLink fw-bold" href="portfolio.html">Portfolio</a>
-            <ul class="subMenu">
-              <li><a href="portfolio/branding.html"> Branding</a></li>
-              <li><a href="portfolio/fotos.html"> Fotos</a></li>
-              <li><a href="portfolio/fonts.html"> Fonts</a></li>
-            </ul>
-          </li>
-          <li class="nav-item px-2"><a class="navLink fw-bold" href="sobremi.html">Sobre mi</a></li>
-          <li class="nav-item px-2"><a class="navLink fw-bold" href="contacto.html">Contacto</a></li>
-          <li class="nav-item px-2"><a class="navLink fw-bold" href="faq.html">FAQ</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="navBar navbar-expand-lg navbar-light colorHeader">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img class="navBar_logo" src="assets/gallery/logo.png" alt="logo Gingham" width="50" height="50"
+            class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="link dropdown-toggle" href="portfolio.html" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Portfolio
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="portfolio/fotos.html">Photos</a></li>
+                <li><a class="dropdown-item" href="portfolio/branding.html">Branding</a></li>
+                <li><a class="dropdown-item" href="portfolio/fonts.html">Fonts</a></li>
+              </ul>
+            </li>
+            <li class="nav-item px-2"><a class="link" href="sobremi.html">Sobre mi</a></li>
+            <li class="nav-item px-2"><a class="link" href="contacto.html">Contacto</a></li>
+            <li class="nav-item px-2"><a class="link" href="faq.htm">FAQs</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
-  
-    <main>
-      <section class="tabla">
-        <div class="tabla_listado">
-          <table cellpadding="5" cellspacing="10">
-            <thead>
-              <tr>
-                <th scope="columna_tabla_titulo">Titulo</th>
-                <th scope="columna_tabla_año">Año</th>
-                <th scope="columna_tabla_img">Imagen</th>
-              </tr>
-              <tr>
-                <th scope="columna_tabla_titulo">Trabajo 1</th>
-                <th scope="columna_tabla_año">2016</th>
-                <th scope="columna_tabla_img"><img src="assets/img/gallery/Foto2.jpg" alt="portfolio" width="20%" /></th>
-              </tr>
-              <tr>
-                <th scope="columna_tabla_titulo">Trabajo 2</th>
-                <th scope="columna_tabla_año">2017</th>
-                <th scope="columna_tabla_img"><img src="assets/img/gallery/Foto.jpg" alt="portfolio" width="20%"/></th>
-              </tr>
-              <tr>
-                <th scope="columna_tabla_titulo">Trabajo 3</th>
-                <th scope="columna_tabla_año">2018</th>
-                <th scope="columna_tabla_img"><a href="portfolio/detallePort.html"><img src="assets/img/gallery/Foto3.jpg" alt="portfolio" width="20%"/></a></th>
-              </tr>
-              <tr>
-                <th scope="columna_tabla_titulo">Trabajo 4</th>
-                <th scope="columna_tabla_año">2020</th>
-                <th scope="columna_tabla_img"><iframe width="560" height="315" src="https://www.youtube.com/embed/aiqxO0ZQ7ic" title="videoYoutube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="20%"></iframe></th>
-              </tr>
-            </thead>
-          </table>
+
+  <!-- opcion de trabajos -->
+
+  <main>
+    <section class="sectionTrabajos">
+      <div class="container_portfolio">
+        <div class="row_portfolio">
+          <div class="col overlayone">
+            <img src="assets/gallery/branding2.jpg" alt="branding" />
+            <div class="overlayinn">
+              <a class="linkPortfolio" href="portfolio/branding.html">
+                <h1>BRANDING</h1>
+              </a>
+            </div>
+          </div>
+          <div class="col overlayone">
+            <img src="assets/gallery/foto2.jpg" alt="photos" />
+            <div class="overlayinn">
+              <a class="linkPortfolio" href="portfolio/fotos.html">
+                <h1>PHOTOS</h1>
+              </a>
+            </div>
+          </div>
+          <div class="col overlayone">
+            <img src="assets/gallery/font2.jpg" alt="fonts" />
+            <div class="overlayinn">
+              <a class="linkPortfolio" href="portfolio/fonts.html">
+                <h1>FONTS</h1>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <div class="mt-5 pt-5 pb-5 title_Footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer_Section1 col-lg-5 col-xs-12">
+            <h1 class="titulos_footer">GINGHAM</h1>
+            <p class="descripcion">Graphic and media designer student based in Argentina</p>
+          </div>
+          <div class="footer_Section2 col">
+            <h1 class="titulos_footer">Portfolio</h1>
+            <ul class="footer_listado nav flex-column">
+              <li class="nav-item mb-2"><a href="portfolio/fotos.html" class="link p-0 text-bold">Fotos</a></li>
+              <li class="nav-item mb-2"><a href="portfolio/branding.html" class="link p-0 text-bold">Branding</a>
+              </li>
+              <li class="nav-item mb-2"><a href="portfolio/fonts.html" class="link p-0 text-bold">Fonts</a></li>
+            </ul>
+          </div>
+          <div class="footer_Section3 col-lg-4 col-xs-12">
+            <h1 class="titulos_footer">Contacto</h1>
+            <ul class="contacto nav flex-column">
+              <li class="nav-item mb-2">
+                <p><i class="address"></i> Buenos Aires, Argentina</p>
+              </li>
+              <li class="nav-item mb-2">
+                <p><i class="mail"></i>sporniara@gmail.com</p>
+              </li>
+              <li class="nav-item mb-2">
+                <p><i class="phone"></i> + 1140862634</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="social-btn text-center my-4"><a href="#!" title="Facebook"><i
+                class="me-4 fa fa-facebook fs-3 text-facebook"></i></a><a href="#!" title="Twitter"> <i
+                class="me-4 fa fa-twitter fs-3 text-twitter"></i></a><a href="#!" title="Instagram"> <i
+                class="me-4 fa fa-instagram fs-3 text-instagram"></i></a></div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-</div>
-</section>
-</main>
+  </footer>
 
-<footer class="title_Footer">
-  <div class="footer_Row">
-    <div class="footer_Section1">
-      <div class="footer_nombre">GINGHAM</div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-    <div class="footer_Section2">Portfolio
-      <p class="footer_listado">
-        <a href="portfolio/fotos.html">Fotos</a>
-      </p>
-      <p class="footer_listado">
-        <a href="portfolio/branding.html">Branding</a>
-      </p>
-      <p class="footer_listado">
-        <a href="portfolio/fonts.html">Fonts</a>
-      </p>
-    </div>
-    <div class="footer_Section3"> Contacto
-      <p><i class="footer_address"></i> Buenos Aires, Argentina</p>
-      <p>
-        <i class="footer_mail"></i>
-        sporniara@gmail.com
-      </p>
-      <p><i class="footer_phone"></i> + 1234567890</p>
-    </div>
-  </div>
-</footer>
+  <!-- JavaScripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -20,7 +20,7 @@
   <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&amp;display=swap" rel="stylesheet">
 
   <!-- css -->
-  <link href="assets/css/estilos-sass.css" rel="stylesheet" />
+  <link href="scss/estilos-sass.css" rel="stylesheet" />
 
   <title>GINGHAM</title>
 
@@ -31,25 +31,34 @@
 
     <!-- header -->
 
+
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light colorHeader">
+      <nav class="navBar navbar-expand-lg navbar-light colorHeader">
         <div class="container-fluid">
-          <div>
             <a class="navbar-brand" href="indexBS.html">
-              <img src="assets/gallery/logo.png" alt="logo Gingham" width="50" height="50"
+              <img class="navBar_logo" src="assets/gallery/logo.png" alt="logo Gingham" width="50" height="50"
                 class="d-inline-block align-text-top">
             </a>
-          </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item px-2"><a class="nav-link fw-bold" href="portfolio.html">Portfolio</a></li>
-              <li class="nav-item px-2"><a class="nav-link fw-bold" href="sobrei.html">Sobre mi</a></li>
-              <li class="nav-item px-2"><a class="nav-link fw-bold" href="contacto.html">Contacto</a></li>
-              <li class="nav-item px-2"><a class="nav-link fw-bold" href="faq.htm">FAQs</a></li>
+              <li class="nav-item dropdown">
+                <a class="link dropdown-toggle" href="portfolio.html" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Portfolio
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="portfolio/fotos.html">Photos</a></li>
+                  <li><a class="dropdown-item" href="portfolio/branding.html">Branding</a></li>
+                  <li><a class="dropdown-item" href="portfolio/fonts.html">Fonts</a></li>
+                </ul>
+              </li>
+              <li class="nav-item px-2"><a class="link" href="sobremi.html">Sobre mi</a></li>
+              <li class="nav-item px-2"><a class="link" href="contacto.html">Contacto</a></li>
+              <li class="nav-item px-2"><a class="link" href="faq.htm">FAQs</a></li>
             </ul>
           </div>
         </div>
@@ -58,11 +67,11 @@
 
     <!-- section 1 -->
 
-    <section class="section-nombre">
+    <section class="hero">
       <div class="container">
         <div class="row align-items-center min-vh-75 min-vh-md-50">
           <div class="col-12 text-center py-8">
-            <h1 class="lh-sm fs-lg-6 fs-xxl-7">Gingham</h1>
+            <img class="hero_Img" src="assets/gallery/logo2.png" alt="" width="40%">
             <p class="text-700">Obtenga trabajos de calidad para su marca</p>
           </div>
         </div>
@@ -92,27 +101,27 @@
               <div class="row gx-3">
                 <div class="col-sm-6 col-md-4 mb-3 h-100">
                   <div class="card card-span h-100 text-white"><img class="rounded-3 h-100"
-                      src="assets/gallery/foto.jpg" alt="..." /><a class="stretched-link" href="#!"></a></div>
+                      src="assets/gallery/foto.jpg" alt="foto" /><a class="stretched-link" href="#!"></a></div>
                 </div>
                 <div class="col-sm-6 col-md-4 mb-3 h-100">
                   <div class="card card-span h-100 text-white"><img class="rounded-3 h-100"
-                      src="assets/gallery/foto2.jpg" alt="..." /><a class="stretched-link" href="#!"></a></div>
+                      src="assets/gallery/foto2.jpg" alt="foto" /><a class="stretched-link" href="#!"></a></div>
                 </div>
                 <div class="col-sm-6 col-md-4 mb-3 h-100">
                   <div class="card card-span h-100 text-white"><img class="rounded-3 h-100"
-                      src="assets/gallery/foto3.jpg" alt="..." /><a class="stretched-link" href="#!"></a></div>
+                      src="assets/gallery/foto3.jpg" alt="foto" /><a class="stretched-link" href="#!"></a></div>
                 </div>
                 <div class="col-sm-6 col-md-4 mb-3 h-100">
                   <div class="card card-span h-100 text-white"><img class="rounded-3 h-100"
-                      src="assets/gallery/foto4.jpg" alt="..." /><a class="stretched-link" href="#!"></a></div>
+                      src="assets/gallery/foto4.jpg" alt="foto" /><a class="stretched-link" href="#!"></a></div>
                 </div>
                 <div class="col-sm-6 col-md-4 mb-3 h-100">
                   <div class="card card-span h-100 text-white"><img class="rounded-3 h-100"
-                      src="assets/gallery/foto5.jpg" alt="..." /><a class="stretched-link" href="#!"></a></div>
+                      src="assets/gallery/foto5.jpg" alt="foto" /><a class="stretched-link" href="#!"></a></div>
                 </div>
                 <div class="col-sm-6 col-md-4 mb-3 h-100">
                   <div class="card card-span h-100 text-white"><img class="rounded-3 h-100"
-                      src="assets/gallery/foto6.jpg" alt="..." /><a class="stretched-link" href="#!"></a></div>
+                      src="assets/gallery/foto6.jpg" alt="foto" /><a class="stretched-link" href="#!"></a></div>
                 </div>
                 <div class="col-12 d-flex justify-content-center mt-5"> <a
                     class="btn btn-lg btn-outline-warning rounded-pill" href="..portfolio/fotos.html">Photos<i
@@ -124,27 +133,27 @@
               <div class="row gx-3">
                 <div class="col-sm-6 col-md-4 mb-3 h-100">
                   <div class="card card-span h-100 text-white"><img class="rounded-3 h-100"
-                      src="assets/gallery/font.jpg" alt="..." /><a class="stretched-link" href="#!"></a></div>
+                      src="assets/gallery/font.jpg" alt="font" /><a class="stretched-link" href="#!"></a></div>
                 </div>
                 <div class="col-sm-6 col-md-4 mb-3 h-100">
                   <div class="card card-span h-100 text-white"><img class="rounded-3 h-100"
-                      src="assets/gallery/font2.jpg" alt="..." /><a class="stretched-link" href="#!"></a></div>
+                      src="assets/gallery/font2.jpg" alt="font" /><a class="stretched-link" href="#!"></a></div>
                 </div>
                 <div class="col-sm-6 col-md-4 mb-3 h-100">
                   <div class="card card-span h-100 text-white"><img class="rounded-3 h-100"
-                      src="assets/gallery/font3.jpg" alt="..." /><a class="stretched-link" href="#!"></a></div>
+                      src="assets/gallery/font3.jpg" alt="font" /><a class="stretched-link" href="#!"></a></div>
                 </div>
                 <div class="col-sm-6 col-md-4 mb-3 h-100">
                   <div class="card card-span h-100 text-white"><img class="rounded-3 h-100"
-                      src="assets/gallery/font4.jpg" alt="..." /><a class="stretched-link" href="#!"></a></div>
+                      src="assets/gallery/font4.jpg" alt="font" /><a class="stretched-link" href="#!"></a></div>
                 </div>
                 <div class="col-sm-6 col-md-4 mb-3 h-100">
                   <div class="card card-span h-100 text-white"><img class="rounded-3 h-100"
-                      src="assets/gallery/font5.jpg" alt="..." /><a class="stretched-link" href="#!"></a></div>
+                      src="assets/gallery/font5.jpg" alt="font" /><a class="stretched-link" href="#!"></a></div>
                 </div>
                 <div class="col-sm-6 col-md-4 mb-3 h-100">
                   <div class="card card-span h-100 text-white"><img class="rounded-3 h-100"
-                      src="assets/gallery/font6.jpg" alt="..." /><a class="stretched-link" href="#!"></a></div>
+                      src="assets/gallery/font6.jpg" alt="font" /><a class="stretched-link" href="#!"></a></div>
                 </div>
                 <div class="col-12 d-flex justify-content-center mt-5"> <a
                     class="btn btn-lg btn-outline-warning rounded-pill" href="#!">Fonts<i
@@ -156,27 +165,27 @@
               <div class="row gx-3">
                 <div class="col-sm-6 col-md-4 mb-3 h-100">
                   <div class="card card-span h-100 text-white"><img class="rounded-3 h-100"
-                      src="assets/gallery/branding.jpg" alt="..." /><a class="stretched-link" href="#!"></a></div>
+                      src="assets/gallery/branding.jpg" alt="branding" /><a class="stretched-link" href="#!"></a></div>
                 </div>
                 <div class="col-sm-6 col-md-4 mb-3 h-100">
                   <div class="card card-span h-100 text-white"><img class="rounded-3 h-100"
-                      src="assets/gallery/branding2.jpg" alt="..." /><a class="stretched-link" href="#!"></a></div>
+                      src="assets/gallery/branding2.jpg" alt="branding" /><a class="stretched-link" href="#!"></a></div>
                 </div>
                 <div class="col-sm-6 col-md-4 mb-3 h-100">
                   <div class="card card-span h-100 text-white"><img class="rounded-3 h-100"
-                      src="assets/gallery/branding3.jpg" alt="..." /><a class="stretched-link" href="#!"></a></div>
+                      src="assets/gallery/branding3.jpg" alt="branding" /><a class="stretched-link" href="#!"></a></div>
                 </div>
                 <div class="col-sm-6 col-md-4 mb-3 h-100">
                   <div class="card card-span h-100 text-white"><img class="rounded-3 h-100"
-                      src="assets/gallery/branding4.jpg" alt="..." /><a class="stretched-link" href="#!"></a></div>
+                      src="assets/gallery/branding4.jpg" alt="branding" /><a class="stretched-link" href="#!"></a></div>
                 </div>
                 <div class="col-sm-6 col-md-4 mb-3 h-100">
                   <div class="card card-span h-100 text-white"><img class="rounded-3 h-100"
-                      src="assets/gallery/branding5.jpg" alt="..." /><a class="stretched-link" href="#!"></a></div>
+                      src="assets/gallery/branding5.jpg" alt="branding" /><a class="stretched-link" href="#!"></a></div>
                 </div>
                 <div class="col-sm-6 col-md-4 mb-3 h-100">
                   <div class="card card-span h-100 text-white"><img class="rounded-3 h-100"
-                      src="assets/gallery/branding6.jpg" alt="..." /><a class="stretched-link" href="#!"></a></div>
+                      src="assets/gallery/branding6.jpg" alt="branding" /><a class="stretched-link" href="#!"></a></div>
                 </div>
                 <div class="col-12 d-flex justify-content-center mt-5"> <a
                     class="btn btn-lg btn-outline-warning rounded-pill" href="../portfolio/branding.html">Branding<i
@@ -192,25 +201,25 @@
 
   <!-- footer -->
   <footer>
-    <div class="mt-5 pt-5 pb-5 footer">
+    <div class="mt-5 pt-5 pb-5 title_Footer">
       <div class="container">
         <div class="row">
-          <div class="col-lg-5 col-xs-12 about-company">
-            <h5>GINGHAM</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="footer_Section1 col-lg-5 col-xs-12">
+            <h1 class="titulos_footer">GINGHAM</h1>
+            <p class="descripcion">Graphic and media designer student based in Argentina</p>
           </div>
-          <div class="col">
-            <h5>Portfolio</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="portfolio/fotos.html" class="nav-link p-0 text-muted">Fotos</a></li>
-              <li class="nav-item mb-2"><a href="portfolio/branding.html" class="nav-link p-0 text-muted">Branding</a>
+          <div class="footer_Section2 col">
+            <h1 class="titulos_footer">Portfolio</h1>
+            <ul class="footer_listado nav flex-column">
+              <li class="nav-item mb-2"><a href="portfolio/fotos.html" class="link p-0 text-bold">Fotos</a></li>
+              <li class="nav-item mb-2"><a href="portfolio/branding.html" class="link p-0 text-bold">Branding</a>
               </li>
-              <li class="nav-item mb-2"><a href="portfolio/fonts.html" class="nav-link p-0 text-muted">Fonts</a></li>
+              <li class="nav-item mb-2"><a href="portfolio/fonts.html" class="link p-0 text-bold">Fonts</a></li>
             </ul>
           </div>
-          <div class="col-lg-4 col-xs-12 location">
-            <h5>Contacto</h5>
-            <ul class="nav flex-column">
+          <div class="footer_Section3 col-lg-4 col-xs-12">
+            <h1 class="titulos_footer">Contacto</h1>
+            <ul class="contacto nav flex-column">
               <li class="nav-item mb-2">
                 <p><i class="address"></i> Buenos Aires, Argentina</p>
               </li>
@@ -218,7 +227,7 @@
                 <p><i class="mail"></i>sporniara@gmail.com</p>
               </li>
               <li class="nav-item mb-2">
-                <p><i class="phone"></i> + 1234567890</p>
+                <p><i class="phone"></i> + 1140862634</p>
               </li>
             </ul>
           </div>

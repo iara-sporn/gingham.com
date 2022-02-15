@@ -1,5 +1,70 @@
 @import "_vars";
 
-.nav-tabs .nav-link{
-    color: $negro;
+.sectionTrabajos{
+    padding-top: 2%;
 }
+
+.linkPortfolio{
+    color: $bordo;
+    text-decoration: none;
+}
+
+.row_portfolio {
+	position: relative;
+	margin: 0 auto;
+	padding: 0 12px;
+	list-style: none;
+	text-align: center;
+
+    h1 {
+        transform: translate3d(0px, 100%, 0px);
+        transition: transform 0.35s ease 0s, color 0.35s ease 0s;
+        width: 100%;
+    }
+}
+ 
+
+img {
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlayone{
+    width: 480px;
+    height: 320px;
+    display: inline-block;
+    position: relative;
+  }
+  .overlayinn {
+    background-color: $blanco;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 70px;
+    transition: opacity .5s;
+  }
+  .overlayinn:hover {
+    opacity: 0.5;
+    transition: opacity .5s;
+
+    .linkPortfolio{
+        color: $bordo;
+        text-decoration: none;
+        opacity: 1;
+    }
+  }
+
+.container_portfolio {
+	margin: 0 auto;
+	padding-left:12px;
+	padding-right:12px;
+}
+
+
+
+
+

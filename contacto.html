@@ -63,55 +63,53 @@
     </nav>
   </header>
 
-<!-- formulario -->
+  <!-- formulario -->
 
   <main>
-    <section>
-      <div class="sufeeLogin">
+    <section class="formulario">
+      <div class="sufee-login d-flex align-content-center flex-wrap">
         <div class="container">
-          <div class="loginContent">
-            <div class="loginForm">
-              <form id="formulario" action="" method="get" enctype="text/plain">
-                <div class="formGroup">
-                  <label> Ingrese su nombre </label>
-                  <input type="text" class="formControl" placeholder="Ingrese su nombre" id="nombre">
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <h3 class="heading mb-4 justify-content-center">Let's talk about everything!</h3>
+                  <p>Send me your questions and I will get back toy you as soon as possible</p>
+                  <p><img src="assets/gallery/undraw-contact.png" alt="Image" class="img-fluid"></p>
                 </div>
-                <br>
-                <div class="formGroup">
-                  <label> Ingrese su apellido </label>
-                  <input type="text" class="formControl" placeholder="Ingrese su apellido" id="apellido">
-                </div>
-                <br>
-                <div class="formGroup">
-                  <label> Seleccione que trabajos te gustaron</label>
-                  <div class="rowSelect">
-                    <div class="opciones">
-                      <select name="select" id="select" class="formControl">
-                        <option value="" disabled selected>Selecicone una opción</option>
-                        <option value="0">Trabajo 1</option>
-                        <option value="1">Trabajo 2</option>
-                        <option value="2">Trabajo 3</option>
-                        <option value="3">Trabajo 4</option>
-                      </select>
+                <div class="col-md-6">
+                  <form class="mb-5" method="post" id="formulario" name="contactForm">
+                    <div class="row">
+                      <div class="col-md-12 form-group">
+                        <label> Enter your full name </label>
+						            <input type="text" class="form-control" placeholder="Your name" id="nombre" >
+                      </div>
                     </div>
-                  </div>
-                  <br>
-                  <div class="formGroup">
-                    <label for="newsletter">Desea suscribirse a mi newsletter</label>
-                    <input type="checkbox" name="checkbox" id="newsletter" value="1">
-                  </div>
-                  <br>
-                  <div class="formGroup">
-                    <label for="comentario">Deje su consulta</label>
-                    <br>
-                    <textarea name="txtMsg" id="comentario" cols="60" rows="10"></textarea>
-                  </div>
-                  <div class="rowButton">
-                    <input type="submit" value="Enviar" class="btnEnviar"></input>
-                    <input type="reset" value="Borrar formulario" class="btnBorrar"></input>
-                  </div>
+                    <div class="row">
+                      <div class="col-md-12 form-group">
+                        <label> Enter your email </label>
+                        <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                      </div>
+                    </div>
+                    <div class="formGroup">
+                      <label for="newsletter">Do you want to suscribe to my newsletter?</label>
+                      <input type="checkbox" name="checkbox" id="newsletter" value="1">
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 form-group">
+                        <textarea class="form-control" name="message" id="message" cols="30" rows="7"
+                          placeholder="Write your message"></textarea>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <input type="submit" id="enviar" value="Send Message" class="btnEnviar rounded-0 py-2 px-4">
+                        <span class="submitting"></span>
+                      </div>
+                    </div>
+                  </form>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>
@@ -153,7 +151,10 @@
           </div>
         </div>
         <div class="col-12">
-          <div class="social-btn text-center my-4"><a href="#!" title="Facebook"><i class="me-4 fa fa-facebook fs-3 text-facebook"></i></a><a href="#!" title="Twitter"> <i class="me-4 fa fa-twitter fs-3 text-twitter"></i></a><a href="#!" title="Instagram"> <i class="me-4 fa fa-instagram fs-3 text-instagram"></i></a></div>
+          <div class="social-btn text-center my-4"><a href="#!" title="Facebook"><i
+                class="me-4 fa fa-facebook fs-3 text-facebook"></i></a><a href="#!" title="Twitter"> <i
+                class="me-4 fa fa-twitter fs-3 text-twitter"></i></a><a href="#!" title="Instagram"> <i
+                class="me-4 fa fa-instagram fs-3 text-instagram"></i></a></div>
         </div>
       </div>
     </div>
@@ -163,6 +164,23 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
 </body>
+
+<script type="text/javascript">
+	$(function(){
+		$("#enviar").click(
+			function(e){
+				e.preventDefault();
+				if($("#nombre").val() =="" || $("#email").val()=="" || $("#newsletter input:Checked").val().lenght == 0 || $("#nombre").val().lenght < 4 || $("#apellido").val().length < 5 ){
+					alert("Por favor, completa todos los campos");
+				}
+				else{
+				$("#formulario").submit();
+				}
+			});
+		});
+	</script>
 
 </html>

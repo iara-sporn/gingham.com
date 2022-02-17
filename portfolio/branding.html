@@ -23,14 +23,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- css -->
-  <link href="scss/estilos-sass.css" rel="stylesheet" />
+  <link href="../scss/estilos-sass.css" rel="stylesheet" />
 
-  <title>Sección de branding</title>
+  <title>Sección de fotos</title>
 
 </head>
 
 <body>
-  <main>
+
+  <div class="preloading fadeIn">
 
     <!-- header -->
 
@@ -58,8 +59,8 @@
                   <li><a class="dropdown-item" href="../portfolio/fonts.html">Fonts</a></li>
                 </ul>
               </li>
-              <li class="nav-item px-2"><a class="link" href="../sobremi.html">Sobre mi</a></li>
-              <li class="nav-item px-2"><a class="link" href="../contacto.html">Contacto</a></li>
+              <li class="nav-item px-2"><a class="link" href="../sobremi.html">About me</a></li>
+              <li class="nav-item px-2"><a class="link" href="../contacto.html">Contact</a></li>
               <li class="nav-item px-2"><a class="link" href="../faq.htm">FAQs</a></li>
             </ul>
           </div>
@@ -67,95 +68,154 @@
       </nav>
     </header>
 
+    <div class="container">
 
-    <main>
-      <section class="tabla">
-        <div class="tabla_listado">
-          <table cellpadding="5" cellspacing="10">
-            <thead>
-              <tr>
-                <th scope="columna_tabla_titulo">Titulo</th>
-                <th scope="columna_tabla_año">Año</th>
-                <th scope="columna_tabla_img">Imagen</th>
-              </tr>
-              <tr>
-                <th scope="columna_tabla_titulo">Trabajo 1</th>
-                <th scope="columna_tabla_año">2016</th>
-                <th scope="columna_tabla_img"><img src="../assets/img/gallery/Foto2.jpg" alt="portfolio" width="20%" /></th>
-              </tr>
-              <tr>
-                <th scope="columna_tabla_titulo">Trabajo 2</th>
-                <th scope="columna_tabla_año">2017</th>
-                <th scope="columna_tabla_img"><img src="../assets/img/gallery/Foto.jpg" alt="portfolio" width="20%"/></th>
-              </tr>
-              <tr>
-                <th scope="columna_tabla_titulo">Trabajo 3</th>
-                <th scope="columna_tabla_año">2018</th>
-                <th scope="columna_tabla_img"><a href="../portfolio/detallePort.html"><img src="../assets/img/gallery/Foto3.jpg" alt="portfolio" width="20%"/></a></th>
-              </tr>
-              <tr>
-                <th scope="columna_tabla_titulo">Trabajo 4</th>
-                <th scope="columna_tabla_año">2020</th>
-                <th scope="columna_tabla_img"><iframe width="560" height="315" src="https://www.youtube.com/embed/aiqxO0ZQ7ic" title="videoYoutube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="20%"></iframe></th>
-              </tr>
-            </thead>
-          </table>
+      <!--- titulo --->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="works-hero-bg">
+            <h1 class="fade-anime-top"> Branding </h1>
+          </div>
+        </div>
+      </div>
+
+      <main>
+        <!--- trabajos --->
+        <section class="tabla">
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <div class="prjct-bg">
+                <a href="../portfolio/detallePort.html"> <img src="../assets/gallery/branding.jpg" alt="branding 1"
+                    class="img-prjct-wrk"> </a>
+                <div class="prjct-wrt-left-wrk"> </div>
+                <div class="shw-cs2"> Good Karma </div>
+                <div class="shw-cs4"> 2020 </div>
+                <div class="shw-cs"> Belgium </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xs-12">
+              <div class="prjct-bg">
+                <a href="../portfolio/detallePort.html"> <img src="../assets/gallery/branding2.jpg" alt="branding 2"
+                    class="img-prjct-wrk"> </a>
+                <div class="prjct-wrt-right-wrk"> </div>
+                <div class="shw-cs2"> Mont & Sea </div>
+                <div class="shw-cs4"> 2021 </div>
+                <div class="shw-cs"> France </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <div class="prjct-bg">
+                <a href="../portfolio/detallePort.html"> <img src="../assets/gallery/branding3.jpg" alt="branding 3"
+                    class="img-prjct-wrk"> </a>
+                <div class="prjct-wrt-left-wrk"> </div>
+                <div class="shw-cs2"> The Local </div>
+                <div class="shw-cs4"> 2020 </div>
+                <div class="shw-cs"> USA </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xs-12">
+              <div class="prjct-bg">
+                <a href="../portfolio/detallePort.html"> <img src="../assets/gallery/branding4.jpg" alt="branding 4"
+                    class="img-prjct-wrk"> </a>
+                <div class="prjct-wrt-right-wrk"> </div>
+                <div class="shw-cs2"> Pumped Beer </div>
+                <div class="shw-cs4"> 2019 </div>
+                <div class="shw-cs"> USA </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <div class="prjct-bg">
+                <a href="../portfolio/detallePort.html"> <img src="../assets/gallery/branding5.jpg" alt="branding 5"
+                    class="img-prjct-wrk"> </a>
+                <div class="prjct-wrt-left-wrk"> </div>
+                <div class="shw-cs2"> Mont Bar </div>
+                <div class="shw-cs4"> 2022 </div>
+                <div class="shw-cs"> Spain </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xs-12">
+              <div class="prjct-bg">
+                <a href="../portfolio/detallePort.html"> <img src="../assets/gallery/branding6.jpg" alt="branding 6"
+                    class="img-prjct-wrk"> </a>
+                <div class="prjct-wrt-right-wrk"> </div>
+                <div class="shw-cs2"> Graziano </div>
+                <div class="shw-cs4"> 2022 </div>
+                <div class="shw-cs"> Italy </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <!--- botos de volver --->
+    <div class="row">
+      <div class="col-md-12 col-xs-12">
+        <div class="allprojects-lgs-bg2">
+          <a class="btn-allprojects" href="../portfolio.html" role="button">OTHER PROJECTS</a>
         </div>
       </div>
     </div>
+    </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="mt-5 pt-5 pb-5 title_Footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer_Section1 col-lg-5 col-xs-12">
+              <h1 class="titulos_footer">GINGHAM</h1>
+              <p class="descripcion">Graphic and media designer student based in Argentina</p>
+            </div>
+            <div class="footer_Section2 col">
+              <h1 class="titulos_footer">Portfolio</h1>
+              <ul class="footer_listado nav flex-column">
+                <li class="nav-item mb-2"><a href="portfolio/fotos.html" class="link p-0 text-bold">Photos</a></li>
+                <li class="nav-item mb-2"><a href="portfolio/branding.html" class="link p-0 text-bold">Branding</a>
+                </li>
+                <li class="nav-item mb-2"><a href="portfolio/fonts.html" class="link p-0 text-bold">Fonts</a></li>
+              </ul>
+            </div>
+            <div class="footer_Section3 col-lg-4 col-xs-12">
+              <h1 class="titulos_footer">Contact</h1>
+              <ul class="contacto nav flex-column">
+                <li class="nav-item mb-2">
+                  <p><i class="address"></i> Buenos Aires, Argentina</p>
+                </li>
+                <li class="nav-item mb-2">
+                  <p><i class="mail"></i>sporniara@gmail.com</p>
+                </li>
+                <li class="nav-item mb-2">
+                  <p><i class="phone"></i> + 1140862634</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="social-btn text-center my-4"><a href="#!" title="Facebook"><i
+                  class="me-4 fa fa-facebook fs-3 text-facebook"></i></a><a href="#!" title="Twitter"> <i
+                  class="me-4 fa fa-twitter fs-3 text-twitter"></i></a><a href="#!" title="Instagram"> <i
+                  class="me-4 fa fa-instagram fs-3 text-instagram"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/main.js"></script>
   </div>
-</div>
-</div>
-</section>
-  </main>
-
-   <!-- footer -->
-   <footer>
-    <div class="mt-5 pt-5 pb-5 title_Footer">
-      <div class="container">
-        <div class="row">
-          <div class="footer_Section1 col-lg-5 col-xs-12">
-            <h1 class="titulos_footer">GINGHAM</h1>
-            <p class="descripcion">Graphic and media designer student based in Argentina</p>
-          </div>
-          <div class="footer_Section2 col">
-            <h1 class="titulos_footer">Portfolio</h1>
-            <ul class="footer_listado nav flex-column">
-              <li class="nav-item mb-2"><a href="portfolio/fotos.html" class="link p-0 text-bold">Fotos</a></li>
-              <li class="nav-item mb-2"><a href="portfolio/branding.html" class="link p-0 text-bold">Branding</a>
-              </li>
-              <li class="nav-item mb-2"><a href="portfolio/fonts.html" class="link p-0 text-bold">Fonts</a></li>
-            </ul>
-          </div>
-          <div class="footer_Section3 col-lg-4 col-xs-12">
-            <h1 class="titulos_footer">Contacto</h1>
-            <ul class="contacto nav flex-column">
-              <li class="nav-item mb-2">
-                <p><i class="address"></i> Buenos Aires, Argentina</p>
-              </li>
-              <li class="nav-item mb-2">
-                <p><i class="mail"></i>sporniara@gmail.com</p>
-              </li>
-              <li class="nav-item mb-2">
-                <p><i class="phone"></i> + 1140862634</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="social-btn text-center my-4"><a href="#!" title="Facebook"><i
-                class="me-4 fa fa-facebook fs-3 text-facebook"></i></a><a href="#!" title="Twitter"> <i
-                class="me-4 fa fa-twitter fs-3 text-twitter"></i></a><a href="#!" title="Instagram"> <i
-                class="me-4 fa fa-instagram fs-3 text-instagram"></i></a></div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- JavaScripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>

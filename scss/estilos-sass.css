@@ -150,18 +150,150 @@ p {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-table {
-  border: 3px solid;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.row {
+  margin-bottom: 5%;
 }
 
-table tr {
-  border: 1px solid;
+.btn-allprojects {
+  color: #b2134e;
+  background-color: transparent;
+  border: 1px solid #b2134e;
+  padding: 8px 18px;
+  font-size: 1em;
+  display: inline;
+  margin-left: 50%;
+  margin-right: 50%;
+  margin-bottom: 5px;
+  letter-spacing: .07em;
+  text-align: center;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  white-space: nowrap;
+  line-height: 1.8em;
+  border-radius: 0px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
-table tr th {
-  background-color: white;
-  border: 1px solid;
+.btn-allprojects:hover {
+  background-color: #f39200;
+  color: #fff;
+  border: 1px solid #f39200;
+  text-decoration: none;
+}
+
+.img-prjct-wrk {
+  border-radius: 0px;
+  max-width: 100%;
+  height: auto;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  display: table;
+  position: relative;
+  padding-left: 2%;
+  padding-right: 2%;
+  -webkit-animation: animatebottom 3s;
+          animation: animatebottom 3s;
+}
+
+.img-prjct-wrk:hover {
+  cursor: pointer;
+  opacity: .7;
+  -webkit-transform: scale(0.92);
+  transform: scale(0.92);
+}
+
+.prjct-wrt-right-wrk {
+  position: absolute;
+  right: 3%;
+  top: 12%;
+  font-size: 2.6em;
+  color: #161616;
+  font-weight: 700;
+  max-width: 100%;
+}
+
+.prjct-wrt-left-wrk {
+  position: absolute;
+  left: 3%;
+  top: 12%;
+  font-size: 2.6em;
+  color: #161616;
+  font-weight: 700;
+  max-width: 100%;
+}
+
+.col-md-6, .col-xs-12, .col-md-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.shw-cs2, .shw-cs4, .shw-cs {
+  text-align: center;
+  padding: 2px;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.fade-anime-top {
+  position: relative;
+  -webkit-animation: animatetop 3s;
+          animation: animatetop 3s;
+  max-width: 100%;
+  text-align: center;
+  padding-bottom: 5px;
+  color: #b2134e;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 .sobremi h2 {

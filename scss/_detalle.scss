@@ -1,12 +1,113 @@
 @import "_vars";
    
- .titleTrabajo{
-    text-align: center;
-    color: $indianred;
+.carouselFotos{
+   padding-top: 5%;
+}
+
+.tituloPrj, .tituloChlng, .tituloFecha {
+   font-size: 2.7em;
+   font-weight: 700;
+   letter-spacing: .03em;
+   line-height: 1.7em;
+   font-family: 'Roboto', sans-serif;
+   color: $negro;
+   padding-left: 10%;
+}
+
+.tituloChlng {
+   font-size: 2.7em;
+   font-weight: 700;
+   letter-spacing: .03em;
+   line-height: 1.7em;
+   font-family: 'Roboto', sans-serif;
+   color: $negro;
+   padding-left: 45%;
+}
+
+.fechaPrj {
+   font-size: 1.3em;
+   line-height: 1.8em;
+   padding: 3%;
+   letter-spacing: .04em;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 300;
+   color: $gris;
+   padding-left: 20%;
+}
+
+.txtChlng {
+   font-size: 1.3em;
+   line-height: 1.8em;
+   padding: 3%;
+   letter-spacing: .04em;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 300;
+   color: $gris;
+   padding-right: 20%;
+}
+
+.descPrj {
+   font-size: 1.3em;
+   line-height: 1.8em;
+   padding: 15%;
+   letter-spacing: .04em;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 300;
+   color: $gris;
+   }
+
+.img-lg-col2 {
+   border-radius: 0px;
+   max-width: 100%;
+   height: auto;
+   -webkit-transition: all .5s ease;
+   -moz-transition: all .5s ease;
+   -ms-transition: all .5s ease;
+   -o-transition: all .5s ease;
+   transition: all .5s ease;
+   display: flex;
+   position: relative;
+   padding-right: 2%;
+   animation: animatebottom 3s; 
+   right: 12%;
  }
 
- p{
-   color: $negro;
-   font-size: 25px;
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.lg-col-bg2 {
+   background: transparent;
+   text-align: left;
+   margin-bottom: 2em;
+   margin-top: 2em;
+}
+         
+.lg-col-bg {
+   background: transparent;
+   text-align: left;
+   margin-bottom: 2em;
+   margin-top: 2em;
+}
+   
+.carousel-inner {
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+   animation: animatebottom 3s;
+ }
+
+.row_tomas {
+	position: relative;
+	padding: 2px;
+	display: flex;
+}
+
+.img_tomas {
+   display: flex;
+   justify-content: space-around;
+   width: 25%;
+   height: 25%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.boton{
+   padding-top: 40px;
 }

@@ -139,19 +139,122 @@ header {
   text-decoration: none;
 }
 
-.titleTrabajo {
-  text-align: center;
-  color: indianred;
+.carouselFotos {
+  padding-top: 5%;
 }
 
-p {
+.tituloPrj, .tituloChlng, .tituloFecha {
+  font-size: 2.7em;
+  font-weight: 700;
+  letter-spacing: .03em;
+  line-height: 1.7em;
+  font-family: 'Roboto', sans-serif;
   color: b #333333;
-  font-size: 25px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-left: 10%;
 }
 
-.row {
-  margin-bottom: 5%;
+.tituloChlng {
+  font-size: 2.7em;
+  font-weight: 700;
+  letter-spacing: .03em;
+  line-height: 1.7em;
+  font-family: 'Roboto', sans-serif;
+  color: b #333333;
+  padding-left: 45%;
+}
+
+.fechaPrj {
+  font-size: 1.3em;
+  line-height: 1.8em;
+  padding: 3%;
+  letter-spacing: .04em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #545454;
+  padding-left: 20%;
+}
+
+.txtChlng {
+  font-size: 1.3em;
+  line-height: 1.8em;
+  padding: 3%;
+  letter-spacing: .04em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #545454;
+  padding-right: 20%;
+}
+
+.descPrj {
+  font-size: 1.3em;
+  line-height: 1.8em;
+  padding: 15%;
+  letter-spacing: .04em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #545454;
+}
+
+.img-lg-col2 {
+  border-radius: 0px;
+  max-width: 100%;
+  height: auto;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding-right: 2%;
+  -webkit-animation: animatebottom 3s;
+          animation: animatebottom 3s;
+  right: 12%;
+}
+
+.lg-col-bg2 {
+  background: transparent;
+  text-align: left;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.lg-col-bg {
+  background: transparent;
+  text-align: left;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  -webkit-animation: animatebottom 3s;
+          animation: animatebottom 3s;
+}
+
+.row_tomas {
+  position: relative;
+  padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.img_tomas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 25%;
+  height: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.boton {
+  padding-top: 40px;
 }
 
 .btn-allprojects {
@@ -161,7 +264,7 @@ p {
   padding: 8px 18px;
   font-size: 1em;
   display: inline;
-  margin-left: 50%;
+  margin-left: 44%;
   margin-right: 50%;
   margin-bottom: 5px;
   letter-spacing: .07em;
@@ -296,43 +399,22 @@ p {
   }
 }
 
-.sobremi h2 {
-  color: b #333333;
-  list-style: none;
-  display: inline;
-  text-align: justify;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 20px;
+.section-title h2 {
+  padding-left: 46%;
+  color: indianred;
+  padding-top: 2%;
 }
 
-.sobremi_fotoMia {
-  width: 200%;
-  float: left;
+.descripcionmia {
+  padding-top: 5%;
 }
 
-.sobremi_textoDesc {
-  width: 60%;
-  text-align: inherit;
-  float: right;
+.cita {
+  padding-top: 5%;
 }
 
-.sobremi_textoSecu {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 20px;
-  text-align: center;
-}
-
-.trabajos_row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.trabajos_column {
-  -webkit-box-flex: 25%;
-      -ms-flex: 25%;
-          flex: 25%;
-  padding: 3px;
+.carrera {
+  padding-top: 5%;
 }
 
 section ul li {

@@ -57,7 +57,9 @@ header {
       grid-template-columns: 20% 60% 20%;
   -ms-grid-rows: (auto)[3];
       grid-template-rows: repeat(3, auto);
-      grid-template-areas: "navBar navBar navBar"  "header header header"  "title_Footer title_Footer title_Footer";
+      grid-template-areas: "navBar navBar navBar" 
+ "header header header" 
+ "title_Footer title_Footer title_Footer";
 }
 
 /* grid */
@@ -68,7 +70,9 @@ header {
       grid-template-columns: 20% 60% 20%;
   -ms-grid-rows: (auto)[3];
       grid-template-rows: repeat(3, auto);
-      grid-template-areas: "navBar navBar navBar"  "header header header"  "title_Footer title_Footer title_Footer";
+      grid-template-areas: "navBar navBar navBar" 
+ "header header header" 
+ "title_Footer title_Footer title_Footer";
 }
 
 .title_Footer {
@@ -265,7 +269,6 @@ header {
   font-size: 1em;
   display: inline;
   margin-left: 44%;
-  margin-right: 50%;
   margin-bottom: 5px;
   letter-spacing: .07em;
   text-align: center;
@@ -570,5 +573,14 @@ img {
   margin: 0 auto;
   padding-left: 12px;
   padding-right: 12px;
+}
+
+.card-link {
+  color: #b2134e;
+  -webkit-text-stroke: thin;
+}
+
+.card-header {
+  background-color: #fff3e4;
 }
 /*# sourceMappingURL=estilos-sass.css.map */
